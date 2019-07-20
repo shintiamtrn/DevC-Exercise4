@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 4</title>
+    <title>Exercise 4 | Index </title>
+
+    <!-- Custom css and js -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- Font Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery, popper, bootsrtap 4. js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <center>
-        <h1>Final Project</h1>
-    </center>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Hackshin9</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/1.jpg" width ="2000" height="300" class="d-block w-100 h-100" alt="Firts Image">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/2.jpg" width ="2000" height="300" class="d-block w-100" alt="Second Image">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/3.jpg" width ="2000" height="300" class="d-block w-100" alt="Third Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="mt-4">Iron man & Spiderman</h3>
+        <p style="max-width:50%;">Spider-Man: Far From Home mengangkat cerita Peter Parker yang berusaha menghadapi rasa duka citanya atas kematian sang mentor, Tony Stark/Iron Man, di Avengers: Endgame. 
+ </p>
+        <div class="row">
+            <div class="col">
+                <!-- <img src="" class="img-fluid" alt="Firts Image"> -->
+                <div class="card">
+                    <img src="assets/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Card link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Card link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Card link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $('.carousel').carousel({
+        interval: 2000
+    });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
 </body>
 </html>
